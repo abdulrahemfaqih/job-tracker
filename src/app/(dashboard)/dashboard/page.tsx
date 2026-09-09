@@ -7,8 +7,10 @@ import { RecentTable } from "@/components/recent-table";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Button } from "@/components/ui/button";
 import { Plus } from "@phosphor-icons/react/dist/ssr";
+import { PwaInstallBanner } from "@/components/pwa-install-banner";
 
 export const metadata = {
+
   title: "Dashboard — Job Tracker",
 };
 
@@ -36,6 +38,9 @@ export default async function DashboardPage() {
           </Button>
         </Link>
       </div>
+
+      {/* PWA Install Notification Banner */}
+      <PwaInstallBanner />
 
       {stats.total === 0 ? (
         <EmptyState
