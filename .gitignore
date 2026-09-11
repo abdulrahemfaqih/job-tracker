@@ -44,4 +44,6 @@ next-env.d.ts
 # local sqlite db
 *.db
 *.db-journal
+PRD.md
+DESIGN.md
 
